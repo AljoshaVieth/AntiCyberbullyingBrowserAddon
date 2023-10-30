@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Detoxify Facebook",
+  "version": "1.0",
+  "description": "Alters post contents of Facebook to prevent unpleasant content.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*", "*://facebook.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
